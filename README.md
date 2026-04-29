@@ -142,3 +142,10 @@ Stored in Delta Lake format
 Supports ACID transactions
 Enables time travel & versioning
 Acts as the single source of truth (raw data)
+
+
+***🥈 ##Silver Layer – Data Cleaning & Transformation##***
+
+📌 **Objective**
+
+Transform raw data into a clean, standardized, and analytics-ready dataset.
