@@ -33,7 +33,7 @@ This project uses Unity Catalog to manage data governance, organization, and acc
 - Gold → Business-ready aggregated data
 - ![Workspace Setup](images/001_workspace_setup.png)
 
-- **##Catalog & Schema Setup (Unity Catalog)##**
+- **Catalog & Schema Setup (Unity Catalog)**
 
 This screenshot shows the successful creation of the project’s data structure in Databricks using Unity Catalog.
 A catalog named catalog_emp_attrition was created to group all project-related data assets
