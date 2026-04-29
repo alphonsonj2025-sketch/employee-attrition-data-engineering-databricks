@@ -171,7 +171,7 @@ Analyze the dataset structure to identify inconsistencies such as naming issues,
 
 Convert all column names into snake_case to enforce consistency, improve readability, and align with data engineering standards.
 
-![Step 3 – Column Standardization](images/silver/02_original_column.png)
+![Step 3 – Column Standardization](images/silver/03_column_standization.png)
 
 ---
 
