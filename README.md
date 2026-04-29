@@ -58,3 +58,22 @@ Ingestion into Unity Catalog Volume
 Organized storage structure for scalability
 Supports batch processing workflows
 ![Bronze Upload](images/004_bronze_upload.png)
+
+##**Step 1: Create Medallion Folders Using PySpark**##
+🔧 **Code**##
+
+To implement the Medallion Architecture, directories were created inside the Unity Catalog Volume using PySpark utilities.
+🔧**Code**
+dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_bronze")
+dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_silver")
+dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_gold")
+![Folder Creation](images/006_folder_creation_code.png)
+
+This step creates three layers for structured data processing:
+Bronze Layer (emp_bronze) → Stores raw, unprocessed data
+Silver Layer (emp_silver) → Stores cleaned and transformed data
+Gold Layer (emp_gold) → Stores aggregated, business-ready data
+
+📌 **Step 2: Verify Folder Structure in Unity Catalog**
+
+![Unity Catalog Structure](images/005_unity_catalog_volume_structure.png)
