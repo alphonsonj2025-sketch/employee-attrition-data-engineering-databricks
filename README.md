@@ -163,7 +163,7 @@ Load raw data from the Bronze layer as the foundation for all transformations. T
 
 Analyze the dataset structure to identify inconsistencies such as naming issues, casing differences, and formatting challenges.
 
-![Step 2 – Inspect Columns](images/silver/02_original_columns.png)
+![Step 2 – Inspect Columns](images/silver/02_original_column.png)
 
 ---
 
