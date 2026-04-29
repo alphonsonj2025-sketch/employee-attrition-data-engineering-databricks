@@ -48,7 +48,9 @@ The dataset Employee-Attrition.csv was uploaded into the volume
 The file is stored within the schema under the volume (displayed as “files” in the Databricks UI)
 ![Data Uploaded](images/003_data_uploaded.png)
 
-**📂##Bronze Layer – Raw Data Ingestion##**
+
+**📂Bronze Layer – Raw Data Ingestion**
+
 The raw employee attrition dataset is successfully ingested into the Bronze layer, serving as the foundation of the Medallion Architecture.
 This layer preserves data in its original format, ensuring traceability and enabling downstream transformations.
 Highlights:
