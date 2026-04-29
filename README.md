@@ -31,3 +31,4 @@ This project uses Unity Catalog to manage data governance, organization, and acc
 - Bronze → Raw data ingestion
 - Silver → Cleaned and transformed data
 - Gold → Business-ready aggregated data
+- ![Workspace Setup](images/001_workspace_setup.png)
