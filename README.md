@@ -41,7 +41,7 @@ A schema named schema_emp_att was created within the catalog to organize dataset
 This setup establishes a clear and scalable foundation for managing data across the Medallion Architecture (Bronze, Silver, Gold).
 ![Catalog Setup](images/002_catalog_creation.png)
 
-# Data Upload to Volume**
+# Data Upload to Volume
 
 This step confirms the successful upload of the raw dataset into the Unity Catalog volume.
 The dataset Employee-Attrition.csv was uploaded into the volume
