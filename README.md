@@ -47,3 +47,9 @@ This step confirms the successful upload of the raw dataset into the Unity Catal
 The dataset Employee-Attrition.csv was uploaded into the volume
 The file is stored within the schema under the volume (displayed as “files” in the Databricks UI)
 ![Data Uploaded](images/003_data_uploaded.png)
+
+### Step 1: Raw Data Ingestion (Bronze Layer)
+
+The dataset was uploaded into a Unity Catalog Volume under the Bronze layer.
+
+![Bronze Upload](images/004_bronze_upload.png)
