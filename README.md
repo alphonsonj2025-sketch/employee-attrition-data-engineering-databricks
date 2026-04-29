@@ -60,8 +60,9 @@ Organized storage structure for scalability
 Supports batch processing workflows
 ![Bronze Upload](images/004_bronze_upload.png)
 
-##**Step 1: Create Medallion Folders Using PySpark**##
-🔧 **Code**##
+***Step 1: Create Medallion Folders Using PySpark***
+
+🔧 ***Code***
 
 To implement the Medallion Architecture, directories were created inside the Unity Catalog Volume using PySpark utilities.
 
