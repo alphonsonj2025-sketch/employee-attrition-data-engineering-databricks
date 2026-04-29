@@ -106,6 +106,7 @@ load() → Reads data from Unity Catalog Volume
 This approach ensures scalability and aligns with modern lakehouse architecture best practices using Unity Catalog and Delta Lake.
 
 📊 **Output Preview**
+
 The DataFrame preview confirms that:
 Data is successfully loaded
 Schema is correctly inferred
