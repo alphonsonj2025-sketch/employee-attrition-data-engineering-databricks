@@ -16,7 +16,7 @@ This project uses Unity Catalog to manage data governance, organization, and acc
 
 ### Structure Used:
 - **Catalog**: `catalog_emp_attrition`
-- **Schema**: `schema_empatt`
+- **Schema**: `schema_emp_att`
 - **Volume**: `empattvol`
 
 ### Purpose:
