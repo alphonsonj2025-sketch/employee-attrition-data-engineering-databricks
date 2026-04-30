@@ -7,9 +7,19 @@
 
 # Employee Attrition Data Engineering Project (Databricks Medallion Architecture)
 
+
 ## 📌 Project Overview
-This project demonstrates an end-to-end Data Engineering pipeline using the Medallion Architecture (Bronze, Silver, Gold) in Databricks.
-The goal is to analyze employee attrition data and generate business insights using scalable data processing techniques.
+
+This project demonstrates the design and implementation of an end-to-end Data Engineering pipeline using the Medallion Architecture (Bronze, Silver, Gold) on Databricks.
+
+The objective is to transform raw employee attrition data into structured, high-quality datasets and deliver business-ready insights through analytical dashboards.
+
+The pipeline follows industry best practices by:
+- Ingesting raw data into the Bronze layer
+- Cleaning, validating, and standardizing data in the Silver layer
+- Aggregating and modeling data in the Gold layer for analytics
+
+The final output is an interactive dashboard that provides insights into employee attrition trends, workforce distribution, and retention patterns, enabling data-driven decision-making for HR and business stakeholders.
 
 Technologies used:
 - Databricks  (with unity catalog for data governance)
