@@ -60,6 +60,7 @@ Organized storage structure for scalability
 Supports batch processing workflows
 ![Bronze Upload](images/004_bronze_upload.png)
 
+
 ***Step 1: Create Medallion Folders Using PySpark***
 
 🔧 ***Code***
@@ -67,6 +68,7 @@ Supports batch processing workflows
 To implement the Medallion Architecture, directories were created inside the Unity Catalog Volume using PySpark utilities.
 
 🔧**Code**
+
 dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_bronze")
 dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_silver")
 dbutils.fs.mkdirs("/Volumes/catalog_emp_attrition/schema_emp_att/emp_gold")
@@ -113,15 +115,18 @@ Schema is correctly inferred
 Dataset is ready for transformation (Silver layer)
 ![Read Bronze Data](images/007_read_bronze_data.png)
 
+
 🟤 **Bronze Layer – Data Ingestion**
 
 The Bronze layer represents the raw ingestion of employee attrition data into Delta Lake using Databricks.
 At this stage, data is ingested as-is without transformations to preserve the original dataset for traceability and auditing.
 
+
 🔹 **Step 1: Load Raw Data**
 
 The dataset was loaded into a Spark DataFrame for processing.
 ![Bronze Data Preview](images/bronze/008_bronze_data_preview.png)
+
 
 **Step 2: Write Data to Delta Table**
 
@@ -130,11 +135,13 @@ The raw data was stored as a Delta table using the following approach:
 df_empatt.write.mode("overwrite") \
 .saveAsTable("catalog_emp_attrition.schema_emp_att.bronze_emp_attrition")
 
+
 🔹**Step 3: Delta Table Created**
 
 The table was successfully created in Unity Catalog as a managed Delta table.
 
 ![Bronze Table Created](images/bronze/009_bronze_table_created.png)
+
 
 ✅ **Key Features**
 
@@ -145,11 +152,14 @@ Acts as the single source of truth (raw data)
 
 
 
-🥈 **Silver Layer – Data Cleaning & Transformation**
+
+🥈**Silver Layer – Data Cleaning & Transformation**
+
 
 📌 **Objective**
 
 Transform raw Bronze data into a clean, structured, and analytics-ready dataset by applying standardization, cleaning, and feature engineering
+
 
 🔹 **Step 1: Read Bronze Table**
 
@@ -161,6 +171,7 @@ Load raw data from the Bronze layer as the foundation for all transformations. T
 
 🔹 **Step 2: Inspect Original Columns**
 
+
 Analyze the dataset structure to identify inconsistencies such as naming issues, casing differences, and formatting challenges.
 
 ![Step 2 – Inspect Columns](images/silver/02_original_column.png)
@@ -169,6 +180,7 @@ Analyze the dataset structure to identify inconsistencies such as naming issues,
 
 🔹 **Step 3: Column Standardization**
 
+
 Convert all column names into snake_case to enforce consistency, improve readability, and align with data engineering standards.
 
 ![Step 3 – Column Standardization](images/silver/03_column_standization.png)
@@ -176,6 +188,7 @@ Convert all column names into snake_case to enforce consistency, improve readabi
 ---
 
 🔹 **Step 4: Validate Clean Column Names**
+
 
 Verify that all column names have been successfully standardized and are ready for downstream transformations.
 
@@ -194,6 +207,7 @@ Inspect and validate the schema to ensure correct data types and structural inte
 🔹 **Step 6: Handle Missing Values**
 
 Improve data quality by replacing null values in critical categorical columns:
+
 
 - **"education_field"** → **"other"**
 - **"job_role"** → **"unknown"**
@@ -272,7 +286,10 @@ This structured approach reflects real-world data engineering practices and show
 
 
 
-🥇 **Gold Layer – Business Insights & Aggregations**
+
+
+🥇 ****Gold Layer – Business Insights & Aggregations****
+
 
 📌 **Objective**
 
