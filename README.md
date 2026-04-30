@@ -269,3 +269,83 @@ Persist the cleaned and transformed dataset as a Delta table for downstream cons
 The Silver layer represents a critical transformation stage where raw data is refined into a trusted, high-quality dataset. By enforcing consistency, improving data quality, and introducing analytical features, this layer ensures that downstream processes operate on reliable and meaningful data.
 
 This structured approach reflects real-world data engineering practices and showcases the ability to build robust, scalable, and business-ready data pipelines, making it highly valuable for analytical workloads and decision-making in the Gold layer.
+
+
+
+🥇 **Gold Layer – Business Insights & Aggregations**
+
+📌 **Objective**
+
+Transform cleaned Silver data into business-level insights through aggregations and analytical modeling to support decision-making.
+
+---
+
+🔹 **Step 1: Read Silver Table**
+
+Load the cleaned dataset from the Silver layer.
+
+![Step 1 – Read Silver Table](images/gold/011_read_silver_table.png)
+
+---
+
+🔹 **Step 2: Attrition Summary**
+
+Provide a high-level overview of employee distribution based on attrition status.
+
+![Step 2 – Attrition Summary](images/gold/012_attrition_summary.png)
+
+---
+
+🔹 **Step 3: Attrition by Department**
+
+Analyze attrition trends across departments to identify high-risk areas.
+
+![Step 3 – Department Analysis](images/gold/013_attrition_by_department.png)
+
+---
+
+🔹 **Step 4: Attrition by Gender**
+
+Understand gender-based attrition patterns.
+
+![Step 4 – Gender Analysis](images/gold/014_attrition_by_gender.png)
+
+---
+
+🔹 **Step 5: Attrition by Age Group**
+
+Evaluate attrition trends across employee age segments.
+
+![Step 5 – Age Group Analysis](images/gold/015_attrition_by_age_group.png)
+
+---
+
+🔹 **Step 6: High Risk Employees**
+
+Identify employees with high likelihood of leaving based on low satisfaction and attrition indicators.
+
+![Step 6 – High Risk Employees](images/gold/016_high_risk_employees.png)
+
+---
+
+📦**Output Tables**
+
+- "gold_attrition_summary"
+- "gold_attrition_by_department"
+- "gold_attrition_by_gender"
+- "gold_attrition_by_age_group"
+- "gold_high_risk_employees"
+
+---
+
+💡 **Business Insights**
+
+- Departments with higher attrition rates require attention
+- Younger employees show higher turnover trends
+- Low job satisfaction is a key driver of attrition
+
+---
+
+🚀 **Gold Layer Conclusion**
+
+The Gold layer transforms curated data into actionable insights, enabling stakeholders to make informed decisions. It represents the final stage of the data pipeline where data is fully optimized for analytics, reporting, and dashboarding.
