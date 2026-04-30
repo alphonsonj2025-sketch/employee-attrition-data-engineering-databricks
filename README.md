@@ -366,3 +366,22 @@ Identify employees with high likelihood of leaving based on low satisfaction and
 🚀 **Gold Layer Conclusion**
 
 The Gold layer transforms curated data into actionable insights, enabling stakeholders to make informed decisions. It represents the final stage of the data pipeline where data is fully optimized for analytics, reporting, and dashboarding.
+
+
+
+## 🥇 Gold Layer – Business Dashboard
+
+### 📊 Employee Attrition Analytics Dashboard
+
+The Gold layer transforms curated Silver data into business-level insights through aggregation and visualization.
+
+This dashboard provides a clear overview of employee attrition trends and workforce stability.
+
+### 📸 Dashboard Preview
+
+![Employee Attrition Dashboard](images/111_attrition_dashboard_overview.png)
+
+### 🔍 Key Insights:
+- 16.12% employee attrition rate
+- 83.88% retention rate
+- Indicates moderate attrition risk requiring monitoring
