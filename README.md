@@ -424,4 +424,20 @@ Research & Development
 Sales
 This ensures workforce stability in critical business functions.
 
+
+### 📌 Project Outcome
+
+This solution transforms raw employee data into actionable insights using a scalable Medallion Architecture.
+
+- Delivered a clean **Gold Layer dashboard** for decision-makers  
+- Identified **attrition trends and workforce distribution gaps**  
+- Enabled **data-driven HR strategy and retention planning**
+
+**Key Metrics**  
+
+Executive Insights  
+Business Recommendation  
+Project Outcome   👈 (NEW)  
+Image (Dashboard) 👈 (FINAL)
+
 ![Executive Dashboard](images/gold/114_final_dashboard_executive_insights.png)
